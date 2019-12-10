@@ -1,0 +1,31 @@
+{% extends 'Guitar/base.html' %}
+
+{% block content %}
+
+<center><h1>Lista das Baterias</h1>
+
+   <table border="1">
+
+   	<tr>
+		<th>Bateria</th>
+		<th>Nome</th>
+		<th>Valor </th>
+		<th>Descrição</th>
+		
+	</tr>
+
+		{% for bateria in lista_bateria %}
+	<tr>
+		<td><img height="400" width="200" src="{{bateria.img.url}}"></td>
+		<td>{{bateria.nome}}</td>
+		<td>{{bateria.valor}}</td>
+		<td>{{bateria.descricao}}</td>
+		
+	</tr>
+
+{% endfor %}
+
+
+{% endblock %}
+</table>
+</center>

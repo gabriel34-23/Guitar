@@ -1,0 +1,31 @@
+{% extends 'Guitar/base.html' %}
+
+{% block content %}
+
+<center><h1>Lista das Guitarras</h1>
+
+ <table border="1">
+
+ 		<tr>
+		<th>Guitarra</th>
+		<th>Nome</th>
+		<th>Valor </th>
+		<th>Descrição</th>
+
+
+	</tr>
+
+		{% for guitar in lista %}
+	<tr>
+		<td><img height="400" width="200" src="{{guitar.img.url}}"></td>
+		<td>{{guitar.nome}}</td>
+		<td>{{guitar.valor}}</td>
+		<td>{{guitar.descricao}}</td>
+	</tr>
+
+{% endfor %}
+
+
+{% endblock %}
+</table>
+</center>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+
+table{    
+        background-color: white;
+        width: 60%;   
+        border-style: solid; 
+        border-width:4pt;
+        border-color: black;
+        border-spacing: 10px;
+        font-family:"Courier new";
+     
+        text-align: center;
+        font-size:16pt;
+        margin-right:20%;
+        margin-left: 20%;
+        margin-top: 2cm;
+        font-style: oblique;
+        font-variant: small-caps;
+    }
+    
+</style>
+</head>
+<body>
+
+<div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="{% url 'lista-todos' %}">Filmes</a>
+  <a href="#contact">Lanches</a>
+  <a href="#about">Bebidas</a>
+  <a href="#support">Comprar Ingresso</a>
+  <a href="#blog">Comprar Lanche</a>
+  <a href="#tools">Comprar Bebida</a>  
+  <a href="#base">CineMax</a>
+  <a href="#custom">Funcionarios</a>
+  
+</div>
+
+<h2>Este é o Sistema CineMax</h2>
+<p>Feito pela GMG Softwares.Inc para todos os cinema do País.</p>
+
+</body>
+</html>

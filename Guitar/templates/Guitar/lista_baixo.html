@@ -1,0 +1,33 @@
+{% extends 'Guitar/base.html' %}
+
+{% block content %}
+
+<center><h1>Lista dos Baixos</h1>
+
+   <table border="1">
+
+
+   		<tr>
+		<th>Baixo</th>
+		<th>Nome</th>
+		<th>Valor </th>
+		<th>Descrição</th>
+		
+	</tr>
+
+		{% for baixo in lista_baixo %}
+	<tr>
+		
+		<td><img height="400" width="200" src="{{baixo.img.url}}"></td>
+		
+		<td>{{baixo.nome}}</td>
+		<td>{{baixo.valor}}</td>
+		<td>{{baixo.descricao}}</td>
+	</tr>
+
+{% endfor %}
+
+
+{% endblock %}
+</table>
+</center>

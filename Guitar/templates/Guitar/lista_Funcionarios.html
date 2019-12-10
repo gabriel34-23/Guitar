@@ -1,0 +1,30 @@
+{% extends 'Guitar/base.html' %}
+
+{% block content %}
+
+<center><h1>Lista dos Funcionarios</h1>
+
+   <table border="1">
+
+   <tr>
+		<th>Funcionário</th>
+		<th>Nome</th>
+		<th>Função </th>
+		
+
+
+	</tr>
+
+		{% for funcionario in lista_funcionario %}
+	<tr>
+		<td><img height="400" width="200" src="{{funcionario.img.url}}"></td>
+		<td>{{funcionario.nome}}</td>
+		<td>{{funcionario.funcao}}</td>
+	</tr>
+
+{% endfor %}
+
+
+{% endblock %}
+</table>
+</center>

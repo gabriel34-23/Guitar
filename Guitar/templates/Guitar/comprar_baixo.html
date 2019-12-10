@@ -1,0 +1,17 @@
+{% extends 'Guitar/base.html' %}
+
+{% block content %}
+<center>
+	<form  method="POST" >
+		<br>
+			{% csrf_token %}
+			{{formL.as_p}}
+		
+			<button type="submit"> Comprar </button>
+<br><br><br>
+
+			
+			
+</form>
+{% endblock %}
+</center>
